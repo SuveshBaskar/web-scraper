@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "abff949d-0c1d-45c7-ac88-9392661f8f3a",
+		"name": "Scraper",
+		"description": "A WebScraper Application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "WhatsApp ChangeLog",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/whatsapp/version",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"whatsapp",
+						"version"
+					]
+				},
+				"description": "Get the current Version for the WhatsApp Business API"
+			},
+			"response": []
+		},
+		{
+			"name": "WhatsApp ChangeLog (No Cache)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/whatsapp/version?nocache=true",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"whatsapp",
+						"version"
+					],
+					"query": [
+						{
+							"key": "nocache",
+							"value": "true"
+						}
+					]
+				},
+				"description": "Get the current Version for the WhatsApp Business API"
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:3000"
+		}
+	]
+}
