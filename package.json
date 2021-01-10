@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "docker:build": "docker built -t suveshbaskar/web-scraper:latest .",
+    "docker:build": "docker build -t suveshbaskar/web-scraper:latest .",
     "docker:push": "docker push suveshbaskar/web-scraper:latest"
   },
   "keywords": [],
